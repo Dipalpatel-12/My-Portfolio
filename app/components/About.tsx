@@ -19,15 +19,35 @@ export default function About() {
                 </motion.div>
 
                 <div className="grid grid-cols-1 gap-12 lg:grid-cols-5">
-                    <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="relative lg:col-span-2">
+
+
+
+                    <motion.div
+                        initial={{ opacity: 0, x: -40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.7 }}
+                        className="relative lg:col-span-2"
+                    >
                         <div className="relative mx-auto w-full max-w-sm">
                             <div className="absolute -inset-2 rounded-2xl bg-gradient-to-br from-[#6366f1] to-[#22d3ee] opacity-60 blur-2xl" />
-                            <div className="relative overflow-hidden rounded-2xl border-2 border-[#6366f1]/40">
-                                <Image src={portfolio.photo} alt={portfolio.name} width={600} height={600} className="h-full w-full object-cover" unoptimized />
+
+                            <div className="relative h-[440px] overflow-hidden rounded-2xl border-2 border-[#6366f1]/40">
+                                <Image
+                                    src={portfolio.photo}
+                                    alt={portfolio.name}
+                                    width={600}
+                                    height={600}
+                                    className="h-full w-full object-cover object-top"
+                                    unoptimized
+                                />
                             </div>
+
                             <div className="absolute -bottom-4 -right-4 rounded-xl border border-[var(--border)] bg-[var(--bg-card)] px-5 py-3 shadow-xl backdrop-blur-md">
                                 <p className="text-xs text-[var(--text-names)]">Experience</p>
-                                <p className="font-semibold text-[var(--text)]">{about?.experience || 'N/A'}</p>
+                                <p className="font-semibold text-[var(--text)]">
+                                    {about?.experience || 'N/A'}
+                                </p>
                             </div>
                         </div>
                     </motion.div>

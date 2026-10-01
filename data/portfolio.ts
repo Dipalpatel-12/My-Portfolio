@@ -299,7 +299,7 @@ export const portfolio = {
     email: "dipal.optimitylogics@gmail.com",
     location: "Ahmedabad, Gujarat, India",
     resumeUrl: "/resume.pdf",
-    photo: "/profile-img.jpg",
+    photo: "/profile-img.png",
     available: true,
 
     tagline:
